@@ -1,0 +1,161 @@
+/* text colour */
+
+body {
+    color:white;
+}
+
+/* page headings and arrow down */
+
+article h2, #experience h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    margin-top: 3.3em;
+}
+
+#experience h1 {
+    font-size: 3.6em;
+}
+
+.arrowPointingDown img {
+    display: block;
+    margin: 5.5em auto 0 auto;
+    width: 10em;
+}
+
+
+
+
+/* projects section, headings and paragraph settings */
+
+#textBasedGame section, #artistProfile section,  #PRPassignments section, #professionalAndResearchPractice section {
+    width:55%;
+}
+
+#projectTables h2 {
+    text-align:center;
+    font-family: 'Jura', sans-serif;
+    font-size: 3em;
+    border: 0.1em solid white;
+    border-left: 0;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    margin-top: 3em;
+}
+
+#textBasedGame h2 {
+    width: 8.3em;
+}
+#artistProfile h2 {
+    width: 12.2em;
+}
+
+#PRPassignments h2 {
+    width: 8.9em;
+}
+
+#projectTables h3{
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.3em;
+    padding: 1em 0 1em 0;
+}
+
+
+
+
+/* image settings for artist project */
+
+#edizTanMusic {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+#edizTanLogo {
+    border: none;
+}
+
+#aboutEdizTan {
+    width: 70em;
+}
+
+#edizTanHomepage {
+    width: 42em;
+}
+
+
+
+
+/* project tables, row and link settings */
+
+.gameProjectTable, .artistProfileProjectTable, .PRPGroupProjectsTable {
+    border-spacing: 0.2em;
+    margin: 1em 3em 0 3em;
+}
+
+#projectTables td {
+    vertical-align: top;
+}
+
+.seeCoursework:link {
+    font-style:italic;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* project table figure settings */
+
+#projectTables figure {
+    z-index: 0;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+#projectTables figcaption {
+    text-align:center;
+    font-family: 'Jura', sans-serif;
+    font-size: 1em;
+    padding: 0.2em;
+}
+
+.gameProjectTable tbody img, .artistProfileProjectTable tbody img {
+    width: 35em;
+    border: solid 0.1em white;
+    padding: 0.5em;
+}
+
+.PRPGroupProjectsTable tbody img {
+    width: 55em;
+    border: solid 0.1em white;
+    padding: 0.5em;
+}
+
+
+
+
+
+/* navigation arrow and footer */
+
+.arrowPointingRight img {
+    width: 10em;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 2em auto 0 auto;
+}
+
+footer nav {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 25em;
+    margin-bottom: 5em;
+}

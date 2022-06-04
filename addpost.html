@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Orbitron&display=swap" rel="stylesheet">
+
+    <title>Blog - Add Post</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagetheme.css">
+    <link rel="stylesheet" href="css/addpost.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <a href="homepage.html">Tanur Dellal</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a> 
+            <a href="experience.html">Experience</a> 
+            <a href="skills.html">Skills & Certificates</a> 
+            <a href="projects.html">Projects</a> 
+            <a class="currentPage" href="blog.html">Blog</a> 
+            <a href="contact.html">Contact</a> 
+        </nav> 
+    </header>
+
+    <article>
+        <form>
+            <fieldset>
+                <h1>ADD POST</h1>
+                <div class="title">
+                    <p>
+                        <input type="text" placeholder="Title..." name="title" maxlength="100" required>
+                    </p>
+                    <p>
+                        (Maximum: 100 Characters)
+                    </p>
+                </div>
+
+                <div class="description">
+                    <p>
+                        <textarea type="text" placeholder="Enter text here..." name="description" maxlength="500" required></textarea>
+                    </p>
+                    <p>
+                        (Maximum: 500 Characters)
+                    </p>
+                </div>
+
+                <div class="submission">
+                    <p>
+                        <button id="resetButton" type="reset" value="Clear Form">Clear</button>
+                        <button id="submitButton" type="submit" value="Submit">Post</button>
+                    </p>
+                </div>
+            </fieldset>
+        </form>
+    </article>
+    
+    <footer>
+        <hr>
+        <nav role="navigation">
+            <a href="homepage.html">Tanur Dellal</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a> 
+            <a href="experience.html">Experience</a> 
+            <a href="skills.html">Skills & Certificates</a> 
+            <a href="projects.html">Projects</a> 
+            <a class="currentPage" href="blog.html">Blog</a> 
+            <a href="contact.html">Contact</a> 
+        </nav>
+        <p>
+            Copyright &#169; 2022 Tanur Dellal
+        </p>
+    </footer>
+</body>
+</html>

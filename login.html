@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Orbitron&display=swap" rel="stylesheet">
+
+    <title>Blog - Login Page</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagetheme.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <a href="homepage.html">Tanur Dellal</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a> 
+            <a href="experience.html">Experience</a> 
+            <a href="skills.html">Skills & Certificates</a> 
+            <a href="projects.html">Projects</a> 
+            <a class="currentPage" href="blog.html">Blog</a> 
+            <a href="contact.html">Contact</a> 
+        </nav> 
+    </header>
+    <article>
+        <form>
+            <fieldset>
+                <h1>LOGIN</h1>
+                <div class="email">
+                    <p>
+                        <input type="email" placeholder="E-mail Address" name="email" required>
+                    </p>
+                </div>
+
+                <div class="password">
+                    <p>
+                        <input type="password" placeholder="Password" minlength="8" maxlength="32" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" name="password" required>
+                    </p>
+                    <p>
+                        (Reminder: Lowercase, Uppercase, Number, 8-32 Characters)
+                    </p>
+                </div>
+                
+                <div class="submission">
+                    <p>
+                        <button type="submit" value="Submit">Log in</button>
+                    </p>
+                </div>
+            </fieldset>
+        </form>
+        <div id="addpostButton">
+            <a href="addpost.html">Add Post</a>
+        </div>
+    </article>
+    <footer>
+        <hr>
+        <nav role="navigation">
+            <a href="homepage.html">Tanur Dellal</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a> 
+            <a href="experience.html">Experience</a> 
+            <a href="skills.html">Skills & Certificates</a> 
+            <a href="projects.html">Projects</a> 
+            <a class="currentPage" href="blog.html">Blog</a> 
+            <a href="contact.html">Contact</a> 
+        </nav>
+        <p>
+            Copyright &#169; 2022 Tanur Dellal
+        </p>
+    </footer>
+</body>
+</html>

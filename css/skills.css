@@ -1,0 +1,228 @@
+/* text colour */
+
+body {
+    color:white;
+}
+
+/* page headings and arrow down */
+
+article h2, #skills h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    margin: 3.3em;
+}
+
+.arrowPointingDown img {
+    display: block;
+    margin: 5.5em auto 0 auto;
+    width: 10em;
+}
+
+
+
+
+
+/* skills table, cells and caption settings */
+
+.skillsTable {
+    margin: 34em auto 0 auto;
+    font-family: 'Jura', sans-serif;
+    border-spacing: 0.2em;
+}
+
+.skillsTable caption {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+table #lineseparator {
+    background-color: rgb(197, 197, 197);
+    border: 0.05em solid rgb(189, 189, 189);
+    border-radius: 10em;
+    width: 70em;
+    margin: 4em auto 4em auto;
+}
+
+
+
+
+
+/* table row and cell settings */
+
+.skillsTable th {
+    padding: 1.5em;
+    font-size: 1.3em;
+    border-right: solid 0.1em white;
+}
+
+.skillsTable #skills {
+    padding: 0.5em;
+}
+
+.skillsTable thead th {
+    font-size: 0.9em;
+    width: 15em;
+    padding-right: 2.4em;
+    padding-bottom: 3em;
+    text-align:center;
+    border: none;
+}
+
+
+
+
+
+/* skills bars */
+
+#elementary {
+    margin-left: 0.5em;
+    border-radius: 10em;
+    width: 40%;
+}
+
+#intermediate {
+    margin-left: 0.5em;
+    border-radius: 10em;
+    width: 71%;
+}
+
+#advanced {
+    margin-left: 0.5em;
+    border-radius: 10em;
+    width: 81%;
+}
+
+#expert {
+    margin-left: 0.5em;
+    border-radius: 10em;
+    width: 85%;
+}
+
+.programmingSkills {
+    border: 0.4em solid rgb(60, 214, 199);
+}
+
+.hardSkills {
+    border: 0.4em solid rgb(255, 145, 0);
+}
+
+.softSkills {
+    border: 0.4em solid palevioletred;
+}
+
+.languageSkills {
+    border: 0.4em solid seagreen;
+}
+
+
+
+
+
+/* certificates table, row and caption settings */
+
+.certificatesTable {
+    font-family: 'Jura', sans-serif;
+    margin: 15em 4em 0 4em;
+    border-spacing: 0.2em;
+}
+
+.certificatesTable caption {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.certificatesTable th, .certificatesTable td {
+    padding: 2em;
+    font-size: 1.3em;
+}
+
+
+
+
+
+/* certificates table figure settings */
+
+.certificatesTable tbody figure {
+    position: relative;
+    z-index: 0;
+}
+
+.certificatesTable tbody img {
+    width: 4em;
+}
+
+
+
+
+
+
+/* institutes table details section settings */
+
+#courseworkLink, #projectLink {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+.certificatesTable tbody #date {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+hr {
+    background-color: rgb(197, 197, 197);
+    border: 0.05em solid rgb(189, 189, 189);
+    border-radius: 10em;
+}
+
+
+
+
+
+/* certificates table bullet point list settings */
+
+.certificatesTable tbody ul {
+    padding-top: 0.2em;
+    list-style: none;
+}
+
+.certificatesTable tbody #listSymbol {
+    font-style: normal;
+    font-weight:lighter;
+    padding-right: 0.6em;
+    font-size: 0.9em;
+}
+
+.certificatesTable tbody ul li {
+    padding-top: 0.8em;
+}
+
+
+
+
+
+/* navigation arrow and footer */
+
+.arrowPointingRight img {
+    width: 10em;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 2em auto 0 auto;
+}
+
+footer nav {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 25em;
+    margin-bottom: 5em;
+}

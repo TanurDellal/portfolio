@@ -1,0 +1,145 @@
+/* text colour for body text */
+
+body {
+    color: white;
+    font-family: 'Jura', sans-serif;
+}
+
+
+
+
+
+/* form settings */
+
+form {
+    margin: 9em auto 0 auto;
+    text-align: center;
+    width: 30em;
+}
+
+fieldset {
+    border-radius: 20px;
+    border: none;
+}
+
+form fieldset h1 {
+    font-family: 'Orbitron', sans-serif;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+
+
+
+
+/* input and placeholder settings */
+
+input {
+    width: 19em;
+    height: 2.3em;
+    margin: 2em auto 0 auto;
+    padding: 0.5em 0.6em 0.5em 0.6em;
+    border-radius: 1em;
+    border: 0.1em solid turquoise;
+    background-color: transparent;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.password p:last-child {
+    font-style: italic;
+    padding: 0.5em;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+
+
+
+
+/*login button appearance*/
+
+.submission button {
+    margin: 2em auto 1em auto;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    background-color: turquoise;
+    border: 0.1em solid turquoise;
+    border-radius: 1.8em;
+    padding: 0.7em 1.8em 0.7em 1.8em;
+}
+
+.submission button:hover {
+    color: turquoise;
+    background-color: transparent;
+    border: 0.1em solid turquoise;
+}
+
+.submission button:active {
+    color: white;
+    background-color: seagreen;
+    border: 0.1em solid white;
+}
+
+
+
+
+
+/* add post link */
+
+#addpostButton {
+    margin: 7.8em auto 8em auto;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#addpostButton a {
+    color: turquoise;
+    border: 0.1em solid turquoise;
+    border-radius: 1.8em;
+    padding: 0.7em 1.8em 0.7em 1.8em;
+}
+
+#addpostButton a:hover {
+    color:black;
+    background-color: turquoise;
+}
+
+#addpostButton a:active {
+    color: white;
+    background-color: seagreen;
+    border: 0.1em solid white;
+}
+
+
+
+
+
+/* navigation arrow and footer */
+
+.arrowPointingRight img {
+    width: 10em;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 2em auto 0 auto;
+}
+
+footer nav {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 40em;
+    margin-bottom: 5em;
+}
