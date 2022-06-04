@@ -1,0 +1,131 @@
+/* text colour */
+
+body {
+    color:white;
+}
+
+/* page headings and arrow down */
+
+article h2, #experience h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    margin-top: 3.3em;
+}
+
+#experience h1 {
+    font-size: 3.6em;
+}
+
+.arrowPointingDown img {
+    display: block;
+    margin: 5.5em auto 0 auto;
+    width: 10em;
+}
+
+
+
+
+
+/* experiences table, cells and caption settings */
+
+.experiencesTable {
+    font-family: 'Jura', sans-serif;
+    margin: 34em 4em 0 4em;
+    border-spacing: 0.2em;
+}
+
+.experiencesTable caption {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.experiencesTable th, .experiencesTable td {
+    padding: 2.5em;
+    font-size: 1.3em;
+}
+
+
+
+
+
+/* experiences table figure settings */
+
+.experiencesTable tbody figure {
+    position: relative;
+    z-index: 0;
+}
+
+.experiencesTable tbody img {
+    width: 6em;
+}
+
+
+
+
+
+/* experiences table details section settings */
+
+#courseworkLink, #projectLink {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+.experiencesTable tbody #date {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+hr {
+    background-color: rgb(197, 197, 197);
+    border: 0.05em solid rgb(189, 189, 189);
+    border-radius: 10em;
+}
+
+
+
+
+
+/* experiences table bullet point list settings */
+
+.experiencesTable tbody ul {
+    padding: 0.2em 0 0 0em;
+    list-style: none;
+}
+
+.experiencesTable tbody #listSymbol {
+    font-style: normal;
+    font-weight:lighter;
+    padding-right: 0.6em;
+    font-size: 0.9em;
+}
+
+.experiencesTable tbody ul li {
+    padding-top: 0.8em;
+}
+
+
+
+
+
+/* navigation arrow and footer */
+
+.arrowPointingRight img {
+    width: 10em;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 2em auto 0 auto;
+}
+
+footer nav {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 25em;
+    margin-bottom: 5em;
+}

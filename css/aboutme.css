@@ -1,0 +1,192 @@
+/* text colour for body text */
+
+body {
+    color: white;
+}
+
+/* main title and arrow down settings */
+
+article h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    margin-top:3.3em;
+}
+
+.arrowPointingDown img {
+    display: block;
+    margin:5.5em auto 0 auto;
+    width: 10em;
+}
+
+
+
+
+
+/* my name and picture settings */
+
+section h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    margin-top:6em;
+}
+
+.profilePicture {
+    text-align: center;
+    margin-top: 20em;
+}
+
+.profilePicture img {
+    border: 0.1em solid white;
+    padding: 0.5em;
+    width: 25em;
+}
+
+.profilePicture figcaption {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.2em;
+    font-style:italic;
+    padding:1em;
+}
+
+
+
+
+
+/* who am i section */
+
+#whoAmI {
+    width: 55%;
+    font-family: 'Jura', sans-serif;
+}
+
+#whoAmI h3 {
+    text-align:center;
+    font-size: 3em;
+    border: 0.1em solid white;
+    border-left: 0;
+    width: 4.8em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    margin-top: 3em;
+}
+
+#whoAmI p {
+    text-align:left;
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+
+
+
+
+/* key strengths section */
+
+#keyStrengths {
+    margin-top: 7em;
+    width:55%;
+    float:right;
+    font-family: 'Jura', sans-serif;
+}
+
+#keyStrengths h3 {
+    text-align: center;
+    font-size: 3em;
+    border: 0.1em solid white;
+    border-right: 0;
+    width: 7.5em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    float:right;  
+}
+
+#keyStrengths p {
+    text-align:right;
+    font-size: 1.3em;
+    padding: 1em;
+    margin-top: 5em;
+}
+
+
+
+
+
+/* research interests section */
+
+#researchInterests {
+    width: 55%;
+    font-family: 'Jura', sans-serif;
+}
+
+#researchInterests h3 {
+    text-align: center;
+    font-size: 3em;
+    border: 0.1em solid white;
+    border-left: 0;
+    width: 9.5em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    margin-top: 13em;
+}
+
+#researchInterests ul {
+    text-align:left;
+    font-size: 1.3em;
+    padding: 1em;
+    list-style: none;
+}
+
+
+
+
+
+/* current ambitions section */
+
+#currentAmbitions {
+    margin-top: 0;
+    width:55%;
+    float:right;
+    font-family: 'Jura', sans-serif;
+}
+
+#currentAmbitions h3 {
+    text-align:center;
+    font-size: 3em;
+    border: 0.1em solid white;
+    border-right: 0;
+    width: 9.1em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    margin-top: 2em;
+    float:right;
+}
+
+#currentAmbitions p {
+    text-align:right;
+    color:white;
+    font-size: 1.3em;
+    padding: 1em;
+    margin-top: 9em;
+}
+
+
+
+
+
+/* navigation arrow and footer */
+
+.arrowPointingRight img {
+    width: 10em;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 27em auto 0 auto;
+}
+
+footer nav {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 45em;
+    margin-bottom: 5em;
+}

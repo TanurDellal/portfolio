@@ -1,0 +1,58 @@
+/* text font, colour and size settings */
+
+article h1, article h3, article p {
+    color:white;
+    text-align: center;
+}
+
+article h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    margin-top: 3.3em;
+}
+
+article h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+article p {
+    font-family: 'Jura', sans-serif;
+    font-size: 1em;
+    margin-top: 16em;
+}
+
+
+
+
+
+/* navigation image */
+
+.arrowPointingRight img {
+    width: 10em;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 2em auto 0 auto;
+}
+
+
+
+
+
+/* social media icon settings */
+
+#instagramlogo img {
+    width: 3em;
+    position: absolute;
+    bottom: 2em;
+}
+
+#linkedinlogo img {
+    width: 2.55em;
+    position: absolute;
+    bottom: 2.3em;
+    right: 3em;
+}
