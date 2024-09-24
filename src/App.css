@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif; /* You can change this to your preferred font */
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  line-height: 1.6; /* Improve readability */
+}
+
+section {
+  scroll-snap-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.spline-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden; /* Hides overflow */
+  position: absolute; /* Positioning to cover the viewport */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it’s behind other content */
+}
+
+.portfolio-content {
+  position: relative; /* Ensures this content is above the Spline */
+  z-index: 1; /* Higher z-index to appear above the Spline */
+  padding: 20px; /* Add padding as needed */
+  color: white; /* Change text color as needed */
+}
