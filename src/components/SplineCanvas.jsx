@@ -16,7 +16,7 @@ const SplineCanvas = () => {
           left: 0,
         }}
       >
-        <Spline scene="https://prod.spline.design/WldTCk4WUUZcPLsr/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/xXll2C6YWS6Ds-cd/scene.splinecode" />
       </Box>
     </Suspense>
   );
