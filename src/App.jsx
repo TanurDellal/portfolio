@@ -15,7 +15,10 @@ import "./App.css";
 export default function App() {
   return (
     <BrowserRouter>
-      <Hero />
+      <div>
+        <Navbar />
+        <Hero />
+      </div>
 
       {/* Projects Section */}
       <Box

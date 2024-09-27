@@ -6,6 +6,7 @@ const SplineCanvas = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Box
+        className={"spline-container"}
         sx={{
           height: "100vh",
           width: "100vw",
