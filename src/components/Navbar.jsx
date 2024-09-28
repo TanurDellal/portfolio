@@ -6,8 +6,8 @@ import Box from "@mui/material/Box";
 import { IconButton, Menu, MenuItem, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+//import svg from "public/td-high-resolution-logo-white-transparent.svg";
 const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 600px)");
   const [anchorEl, setAnchorEl] = useState(null);
@@ -29,13 +29,26 @@ const Navbar = () => {
       }}
     >
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          {/* Replace with your logo image */}
-          <img
-            src="/td-high-resolution-logo-white-transparent-favicon.png"
-            alt="Logo"
-            style={{ height: 50 }}
-          />
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{
+            flexGrow: 1,
+            height: "64px", // Ensure it doesn't exceed the height of the Toolbar
+            width: "64px",
+            padding: "10px 0",
+          }}
+        >
+          <Link to="/">
+            <img
+              src="src/assets/logo.png"
+              alt="Logo"
+              style={{
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </Link>
         </Typography>
         {isMobile ? (
           <>
