@@ -12,7 +12,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "DM Sans", sans-serif; /* You can change this to your preferred font */
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   scroll-behavior: smooth;
 }
 
@@ -22,17 +23,13 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  line-height: 1.6; /* Improve readability */
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
 section {
-  scroll-snap-align: center;
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .app {

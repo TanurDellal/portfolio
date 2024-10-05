@@ -1,23 +1,23 @@
+import { Box, Button, Container, Typography } from "@mui/material";
+import BoxCard from "./BoxCard";
+
 const Contact = () => {
   return (
-    <div>
-      <h2>Contact Us</h2>
-      <form>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <BoxCard id="contact">
+      <Container>
+        <Typography variant="h3" align="center" gutterBottom>
+          Contact Me
+        </Typography>
+        <Typography variant="body1" align="center" paragraph>
+          Feel free to reach out to me.
+        </Typography>
+        <Box textAlign="center">
+          <Button variant="contained" color="primary">
+            Send a Message
+          </Button>
+        </Box>
+      </Container>
+    </BoxCard>
   );
 };
 

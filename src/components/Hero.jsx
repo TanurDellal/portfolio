@@ -1,40 +1,28 @@
 import { Box, Button, Typography } from "@mui/material";
 import SplineCanvas from "./SplineCanvas";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <Box
-      component="section"
-      sx={{
-        width: "100vw",
-        maxWidth: "100vw",
-        height: "100vh",
-        overflow: "hidden",
-        position: "relative",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-      id="landing"
-    >
+    <Box component="section" className={styles.splineContainer} id="landing">
       <SplineCanvas />
-      <Box
-        sx={{
-          position: "absolute",
-          zIndex: 1, // Ensures it is above the Spline component
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <Typography variant="h2" color="white" gutterBottom>
+      <Box className={styles.welcomeContainer}>
+        <Typography
+          variant="h2"
+          className={styles.welcomeText}
+          sx={{ fontWeight: "800", padding: "20px" }}
+          gutterBottom
+        >
           Welcome to My Portfolio
         </Typography>
-        <Typography variant="h5" color="white">
-          I&apos;m Tanur, a Software Engineer
+        <Typography variant="h5" color="white" className={styles.welcomeText}>
+          I&apos;m Tanur, a First-Class CS Graduate
         </Typography>
-        <Button variant="contained" color="primary" sx={{ marginTop: 4 }}>
+        <Button
+          variant="contained"
+          className={styles.nextButton}
+          sx={{ marginTop: 4 }}
+        >
           See My Work
         </Button>
       </Box>

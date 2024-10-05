@@ -1,9 +1,19 @@
+import { Container, Typography } from "@mui/material";
+import BoxCard from "./BoxCard";
+
 const Experience = () => {
   return (
-    <div>
-      <h2>Experience</h2>
-      <p>List your professional experience here.</p>
-    </div>
+    <BoxCard id="experience">
+      <Container>
+        <Typography variant="h3" align="center" gutterBottom>
+          Experience
+        </Typography>
+        <Typography variant="body1" align="center" paragraph>
+          Learn more about my professional experience.
+        </Typography>
+        {/* Add Experience content here */}
+      </Container>
+    </BoxCard>
   );
 };
 

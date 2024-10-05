@@ -7,9 +7,10 @@ import { IconButton, Menu, MenuItem, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-//import svg from "public/td-high-resolution-logo-white-transparent.svg";
+import { sections } from "../index";
+import styles from "./Navbar.module.css";
 const Navbar = () => {
-  const isMobile = useMediaQuery("(max-width: 600px)");
+  const isMobile = useMediaQuery("(max-width: 700px)");
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenuOpen = (event) => {
@@ -21,32 +22,20 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        backgroundColor: "transparent",
-        boxShadow: "none",
-      }}
-    >
-      <Toolbar>
+    <AppBar position="fixed" className={styles.navbar}>
+      <Toolbar className={styles.toolbar}>
         <Typography
           variant="h6"
           component="div"
-          sx={{
-            flexGrow: 1,
-            height: "64px", // Ensure it doesn't exceed the height of the Toolbar
-            width: "64px",
-            padding: "10px 0",
-          }}
+          className={styles.logoContainer}
         >
           <Link to="/">
             <img
               src="src/assets/logo.png"
               alt="Logo"
-              style={{
-                height: "100%",
-                objectFit: "cover",
-              }}
+              className={styles.logo}
+              onDragStart={(e) => e.preventDefault()}
+              draggable="false"
             />
           </Link>
         </Typography>
@@ -57,8 +46,9 @@ const Navbar = () => {
               color="inherit"
               aria-label="menu"
               onClick={handleMenuOpen}
+              className={styles.menuButton}
             >
-              <MenuIcon />
+              <MenuIcon className={styles.icon} />
             </IconButton>
             <Menu
               anchorEl={anchorEl}
@@ -68,6 +58,7 @@ const Navbar = () => {
                 "& .MuiPaper-root": {
                   backgroundColor: "rgba(0, 0, 0, 0.6)", // Transparent menu background
                   border: "1px solid rgba(255, 255, 255, 0.3)", // Border for the entire menu
+                  backdropFilter: "blur(5px)",
                   color: "white",
                   margin: 0,
                 },
@@ -77,182 +68,37 @@ const Navbar = () => {
                 },
               }}
             >
-              <MenuItem
-                onClick={handleMenuClose}
-                component={NavLink}
-                to="/about"
-                sx={{ borderBottom: "1px solid rgba(255, 255, 255, 0.3)" }}
-              >
-                About
-              </MenuItem>
-              <MenuItem
-                onClick={handleMenuClose}
-                component={NavLink}
-                to="/projects"
-                sx={{ borderBottom: "1px solid rgba(255, 255, 255, 0.3)" }}
-              >
-                Projects
-              </MenuItem>
-              <MenuItem
-                onClick={handleMenuClose}
-                component={NavLink}
-                to="/tech"
-                sx={{ borderBottom: "1px solid rgba(255, 255, 255, 0.3)" }}
-              >
-                Tech
-              </MenuItem>
-              <MenuItem
-                onClick={handleMenuClose}
-                component={NavLink}
-                to="/experience"
-                sx={{ borderBottom: "1px solid rgba(255, 255, 255, 0.3)" }}
-              >
-                Experience
-              </MenuItem>
-              <MenuItem
-                onClick={handleMenuClose}
-                component={NavLink}
-                to="/contact"
-              >
-                Contact
-              </MenuItem>
+              {sections.map((section) => (
+                <MenuItem
+                  key={section}
+                  onClick={handleMenuClose}
+                  component={NavLink}
+                  to={`/${section}`}
+                  className={styles.menuItem}
+                  sx={{
+                    fontFamily: "Poppins, sans-serif", // Apply Poppins font to MenuItem
+                    fontWeight: "600",
+                    paddingTop: "10px",
+                    paddingBottom: "10px",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                  }}
+                >
+                  {section.toUpperCase()}
+                </MenuItem>
+              ))}
             </Menu>
           </>
         ) : (
           <Box>
-            <Button
-              sx={{
-                color: "white",
-                position: "relative",
-                "&:hover": {
-                  backgroundColor: "transparent",
-                  backdropFilter: "blur(1px)",
-                  webkitBackdropFilter: "blur(1px)",
-                },
-                "&::after": {
-                  content: '""',
-                  position: "absolute",
-                  width: "0",
-                  height: "2px",
-                  bottom: "0",
-                  left: "50%",
-                  backgroundColor: "white",
-                  transition: "width 0.3s ease, left 0.3s ease",
-                },
-                "&:hover::after": {
-                  width: "100%",
-                  left: "0",
-                },
-              }}
-            >
-              About
-            </Button>
-            <Button
-              sx={{
-                color: "white",
-                position: "relative",
-                "&:hover": {
-                  backgroundColor: "transparent",
-                  backdropFilter: "blur(1px)",
-                  webkitBackdropFilter: "blur(1px)",
-                },
-                "&::after": {
-                  content: '""',
-                  position: "absolute",
-                  width: "0",
-                  height: "2px",
-                  bottom: "0",
-                  left: "50%",
-                  backgroundColor: "white",
-                  transition: "width 0.3s ease, left 0.3s ease",
-                },
-                "&:hover::after": {
-                  width: "100%",
-                  left: "0",
-                },
-              }}
-            >
-              Projects
-            </Button>
-            <Button
-              sx={{
-                color: "white",
-                position: "relative",
-                "&:hover": {
-                  backgroundColor: "transparent",
-                  backdropFilter: "blur(1px)",
-                  webkitBackdropFilter: "blur(1px)",
-                },
-                "&::after": {
-                  content: '""',
-                  position: "absolute",
-                  width: "0",
-                  height: "2px",
-                  bottom: "0",
-                  left: "50%",
-                  backgroundColor: "white",
-                  transition: "width 0.3s ease, left 0.3s ease",
-                },
-                "&:hover::after": {
-                  width: "100%",
-                  left: "0",
-                },
-              }}
-            >
-              Tech
-            </Button>
-            <Button
-              sx={{
-                color: "white",
-                position: "relative",
-                "&:hover": {
-                  backgroundColor: "transparent",
-                  backdropFilter: "blur(1px)",
-                  webkitBackdropFilter: "blur(1px)",
-                },
-                "&::after": {
-                  content: '""',
-                  position: "absolute",
-                  width: "0",
-                  height: "2px",
-                  bottom: "0",
-                  left: "50%",
-                  backgroundColor: "white",
-                  transition: "width 0.3s ease, left 0.3s ease",
-                },
-                "&:hover::after": {
-                  width: "100%",
-                  left: "0",
-                },
-              }}
-            >
-              Experience
-            </Button>
-            <Button
-              sx={{
-                color: "white",
-                position: "relative",
-                backdropFilter: "blur(1px)",
-                webkitBackdropFilter: "blur(1px)",
-                "&:hover": { backgroundColor: "transparent" },
-                "&::after": {
-                  content: '""',
-                  position: "absolute",
-                  width: "0",
-                  height: "2px",
-                  bottom: "0",
-                  left: "50%",
-                  backgroundColor: "white",
-                  transition: "width 0.3s ease, left 0.3s ease",
-                },
-                "&:hover::after": {
-                  width: "100%",
-                  left: "0",
-                },
-              }}
-            >
-              Contact
-            </Button>
+            {sections.map((section) => (
+              <Button
+                key={section}
+                sx={{ marginRight: "12px", fontWeight: "600" }}
+                className={styles.link}
+              >
+                {section.toUpperCase()}
+              </Button>
+            ))}
           </Box>
         )}
       </Toolbar>

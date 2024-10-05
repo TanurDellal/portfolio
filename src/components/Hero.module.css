@@ -1,0 +1,30 @@
+.splineContainer {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.welcomeContainer {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.welcomeText {
+  user-select: none;
+}
+
+.nextButton {
+  &:focus {
+    outline: none;
+  }
+}
