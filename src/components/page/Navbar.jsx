@@ -6,10 +6,11 @@ import Box from "@mui/material/Box";
 import { IconButton, Menu, MenuItem, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { sections } from "../../index";
 import styles from "./Navbar.module.css";
+import img from "../../assets/images/logo/logo.png";
+
 const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 700px)");
   const [anchorEl, setAnchorEl] = useState(null);
@@ -32,7 +33,7 @@ const Navbar = () => {
         >
           <ScrollLink to="landing" smooth={true} duration={300}>
             <img
-              src="src/assets/images/logo/logo.png"
+              src={img}
               alt="Logo"
               className={styles.logo}
               onDragStart={(e) => e.preventDefault()}

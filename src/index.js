@@ -1,3 +1,5 @@
+import img from "./assets/images/projects/cats.jpg";
+
 export const sections = [
   "about",
   "education",
@@ -39,7 +41,7 @@ export const projects = {
   title: "Projects",
   list: [
     {
-      image: "/src/assets/images/projects/cats.jpg",
+      image: { img },
       title: "Strengths Diary Web App",
       techStack: [
         "React.js",
@@ -63,7 +65,7 @@ export const projects = {
       link: "#",
     },
     {
-      image: "/src/assets/images/projects/cats.jpg",
+      image: { img },
       title: "Medieval-Themed Survival Game",
       techStack: ["Unity", "C#", "Git", "Visual Scripting", "Github Projects"],
       info: "Collaborative Unity Project for Game Dev Module | Sep 2023 – Jan 2024",
@@ -77,7 +79,7 @@ export const projects = {
       link: "#",
     },
     {
-      image: "/src/assets/images/projects/cats.jpg",
+      image: { img },
       title: "Crypto Wallet App Prototype",
       techStack: ["Java", "Kotlin", "REST API", "MySQL", "Spring Boot", "Git"],
       info: "Group Software Engineering Project for SEP Module - Jan 2023 – Apr 2023",
@@ -93,7 +95,7 @@ export const projects = {
       link: "#",
     },
     {
-      image: "/src/assets/images/projects/cats.jpg",
+      image: { img },
       title: "Text-based Adventure Game",
       techStack: ["Java", "OOP", "GUI", "Git"],
       info: "Object-Oriented Project for OOP Module | Mar 2022 – Apr 2022",
@@ -143,6 +145,7 @@ export const experiences = {
   title: "Experience",
   list: [
     {
+      image: { img },
       title: "Teaching Assistant",
       info: "QMUL | Sep 2022 – Dec 2022",
       details: [
@@ -150,6 +153,7 @@ export const experiences = {
       ],
     },
     {
+      image: { img },
       title: "Student Consultancy",
       info: "QMUL & IBM | Jun 2022",
       details: [

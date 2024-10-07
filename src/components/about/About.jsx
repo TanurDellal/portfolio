@@ -3,6 +3,7 @@ import { about } from "../../index.js";
 import BoxCard from "../UI/BoxCard.jsx";
 import PaperCard from "../UI/PaperCard.jsx";
 import SectionContentCard from "../UI/SectionContentCard.jsx";
+import img from "../../assets/images/profilePhoto/tanurdellal_photo.jpeg";
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
       <SectionContentCard sectionTitle={about.title}>
         <Avatar
           alt="Tanur Dellal"
-          src="/src/assets/images/profilePhoto/tanurdellal_photo.jpeg" // Replace with actual path to your image
+          src={img}
           sx={{
             width: { xs: 150, md: 250 },
             height: { xs: 150, md: 250 },

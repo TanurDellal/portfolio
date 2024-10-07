@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import {
   Hero,
   About,
@@ -14,7 +13,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <>
       <div>
         <Navbar />
         <Hero />
@@ -25,6 +24,6 @@ export default function App() {
       <Tech />
       <Experience />
       <Contact />
-    </BrowserRouter>
+    </>
   );
 }
