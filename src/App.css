@@ -55,6 +55,5 @@ section {
 .portfolio-content {
   position: relative; /* Ensures this content is above the Spline */
   z-index: 1; /* Higher z-index to appear above the Spline */
-  padding: 20px; /* Add padding as needed */
   color: white; /* Change text color as needed */
 }

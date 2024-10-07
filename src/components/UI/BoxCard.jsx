@@ -8,7 +8,7 @@ const BoxCard = ({ id, children }) => {
       sx={{
         width: "100%",
         backgroundColor: "black",
-        padding: "60px 20px",
+        padding: "60px 40px",
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",

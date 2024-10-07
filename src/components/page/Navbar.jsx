@@ -6,8 +6,9 @@ import Box from "@mui/material/Box";
 import { IconButton, Menu, MenuItem, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { sections } from "../index";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { sections } from "../../index";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 700px)");
@@ -29,15 +30,15 @@ const Navbar = () => {
           component="div"
           className={styles.logoContainer}
         >
-          <Link to="/">
+          <ScrollLink to="landing" smooth={true} duration={300}>
             <img
-              src="src/assets/logo.png"
+              src="src/assets/images/logo/logo.png"
               alt="Logo"
               className={styles.logo}
               onDragStart={(e) => e.preventDefault()}
               draggable="false"
             />
-          </Link>
+          </ScrollLink>
         </Typography>
         {isMobile ? (
           <>
@@ -72,8 +73,8 @@ const Navbar = () => {
                 <MenuItem
                   key={section}
                   onClick={handleMenuClose}
-                  component={NavLink}
-                  to={`/${section}`}
+                  component={ScrollLink}
+                  to={`#${section}`}
                   className={styles.menuItem}
                   sx={{
                     fontFamily: "Poppins, sans-serif", // Apply Poppins font to MenuItem
@@ -96,7 +97,14 @@ const Navbar = () => {
                 sx={{ marginRight: "12px", fontWeight: "600" }}
                 className={styles.link}
               >
-                {section.toUpperCase()}
+                <ScrollLink
+                  to={section}
+                  smooth={true}
+                  duration={300}
+                  className={styles.scrollLink}
+                >
+                  {section.toUpperCase()}
+                </ScrollLink>
               </Button>
             ))}
           </Box>

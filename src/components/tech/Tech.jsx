@@ -1,7 +1,8 @@
-import { Box, Typography, Grid2, LinearProgress, Paper } from "@mui/material";
-import { tech } from "..";
-import BoxCard from "./BoxCard";
-import PaperCard from "./PaperCard";
+import { Typography, Grid2, LinearProgress } from "@mui/material";
+import { tech } from "../..";
+import BoxCard from "../UI/BoxCard";
+import PaperCard from "../UI/PaperCard";
+import SectionContentCard from "../UI/SectionContentCard";
 
 const SkillBar = ({ skill }) => {
   const [proficiencyName, proficiencyValue] = skill.proficiency;
@@ -39,26 +40,21 @@ const SkillBar = ({ skill }) => {
 const Tech = () => {
   return (
     <BoxCard id="tech">
-      <Typography
-        variant="h3"
-        sx={{ textAlign: "center", fontWeight: "bold", marginBottom: "40px" }}
-      >
-        {tech.title}
-      </Typography>
-
-      <Grid2
-        container
-        width="100%"
-        spacing={2.5}
-        justifyContent="center"
-        alignItems="center"
-      >
-        {tech.skills.map((skill, index) => (
-          <Grid2 item xs={12} md={6} width="160px" key={index}>
-            <SkillBar skill={skill} />
-          </Grid2>
-        ))}
-      </Grid2>
+      <SectionContentCard sectionTitle={tech.title}>
+        <Grid2
+          container
+          width="100%"
+          spacing={2.5}
+          justifyContent="center"
+          alignItems="center"
+        >
+          {tech.skills.map((skill, index) => (
+            <Grid2 item="true" xs={12} md={6} width="160px" key={index}>
+              <SkillBar skill={skill} />
+            </Grid2>
+          ))}
+        </Grid2>
+      </SectionContentCard>
     </BoxCard>
   );
 };

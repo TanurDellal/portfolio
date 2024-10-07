@@ -1,0 +1,23 @@
+.list {
+  padding: 20px;
+  padding-top: 10px;
+
+  & li {
+    padding-bottom: 20px;
+  }
+  & li:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

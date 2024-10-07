@@ -1,8 +1,8 @@
-import { Container, Typography, Box, Button, Grid2 } from "@mui/material";
 import { BrowserRouter } from "react-router-dom";
 import {
   Hero,
   About,
+  Education,
   Projects,
   Tech,
   Experience,
@@ -11,7 +11,6 @@ import {
   Footer,
 } from "./components";
 import "./App.css";
-import Education from "./components/Education";
 
 export default function App() {
   return (
