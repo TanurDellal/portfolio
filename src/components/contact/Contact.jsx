@@ -2,6 +2,7 @@ import { Box, Button, Collapse, Typography } from "@mui/material";
 import BoxCard from "../UI/BoxCard";
 import ContactForm from "./ContactForm";
 import { useState } from "react";
+import { contact } from "../../index";
 
 const Contact = () => {
   const [formVisible, setFormVisible] = useState(false);
@@ -12,11 +13,14 @@ const Contact = () => {
 
   return (
     <BoxCard id="contact">
-      <Typography variant="h3" align="center" gutterBottom>
-        Contact Me
+      <Typography
+        variant="h3"
+        sx={{ textAlign: "center", fontWeight: "bold", marginBottom: "40px" }}
+      >
+        {contact.title}
       </Typography>
       <Typography variant="body1" align="center" paragraph>
-        Feel free to reach out to me.
+        {contact.message}
       </Typography>
       <Box sx={{ width: "100%", maxWidth: "600px", mx: "auto", mt: 4 }}>
         <Button

@@ -14,7 +14,6 @@ import "./Projects.css";
 import BoxCard from "../UI/BoxCard";
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import SectionContentCard from "../UI/SectionContentCard";
 
 const Projects = () => {
   const [openDetails, setOpenDetails] = useState(false);
@@ -31,7 +30,12 @@ const Projects = () => {
 
   return (
     <BoxCard id="projects">
-      <SectionContentCard sectionTitle={projects.title} />
+      <Typography
+        variant="h3"
+        sx={{ textAlign: "center", fontWeight: "bold", marginBottom: "40px" }}
+      >
+        {projects.title}
+      </Typography>
 
       <Box
         sx={{
@@ -165,7 +169,6 @@ const Projects = () => {
           </ul>
         </DialogContent>
       </Dialog>
-      <SectionContentCard />
     </BoxCard>
   );
 };
