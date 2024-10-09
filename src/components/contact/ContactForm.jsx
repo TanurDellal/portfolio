@@ -31,7 +31,7 @@ const ContactForm = () => {
           }}
         >
           <Typography variant="h4" sx={{ mb: 3, textAlign: "center" }}>
-            Contact Us
+            Contact Form
           </Typography>
 
           <TextField
