@@ -15,6 +15,7 @@ import BoxCard from "../UI/BoxCard";
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import SectionContentCard from "../UI/SectionContentCard";
+import img from "../../assets/images/projects/cats.jpg";
 
 const Projects = () => {
   const [openDetails, setOpenDetails] = useState(false);
@@ -47,12 +48,13 @@ const Projects = () => {
           <PaperCard key={index}>
             <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
               <img
-                src={project.image}
+                src={img}
                 alt={project.title}
                 style={{
-                  width: "100%",
-                  maxWidth: "900px",
-                  height: "auto",
+                  width: "auto",
+
+                  height: "100%",
+                  maxHeight: "300px",
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                   marginBottom: "10px",

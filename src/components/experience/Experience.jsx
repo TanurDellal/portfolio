@@ -3,7 +3,7 @@ import SectionContentCard from "../UI/SectionContentCard";
 import { experiences } from "../..";
 import { Box, Typography } from "@mui/material";
 import PaperCard from "../UI/PaperCard";
-
+import img from "../../assets/images/projects/cats.jpg";
 const Experience = () => {
   return (
     <BoxCard id="experience">
@@ -22,12 +22,12 @@ const Experience = () => {
             <PaperCard key={index}>
               <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
                 <img
-                  src={exp.image}
+                  src={img}
                   alt={exp.title}
                   style={{
-                    width: "100%",
-                    maxWidth: "900px",
-                    height: "auto",
+                    height: "100%",
+                    maxHeight: "300px",
+                    width: "auto",
                     borderRadius: "8px",
                     boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                     marginBottom: "10px",

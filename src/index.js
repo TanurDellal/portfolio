@@ -109,6 +109,32 @@ export const projects = {
       ],
       link: "#",
     },
+    {
+      image: { img },
+      title: "Portfolio Website",
+      techStack: ["HTML", "CSS", "JavaScript", "PHP"],
+      info: "Mini project | Feb 2022 – Apr 2022",
+      description:
+        "Developed an online portfolio to showcase experiences, achieving 100% in the phase 1 assessment and 96% in phase 2.",
+      details: [
+        "Created portfolio to showcase experiences using HTML, CSS, JavaScript, and PHP, developing a fundamental understanding of front-end web technologies",
+        "Organised blog entries, manipulated database tables, and gained strong insight into client and server-side processing",
+      ],
+      link: "#",
+    },
+    {
+      image: { img },
+      title: "Text-based Game",
+      techStack: ["Java"],
+      info: "Procedural Programming Project | Sep 2021 – Dec 2021",
+      description:
+        "A procedural-style decision-making game coded in Java, improving logical and problem-solving skills.",
+      details: [
+        "Coded and tested a decision-making game in Java, developing logical and problem-solving skills",
+        "Developed strong structural design skills in planning, writing, and abstracting code",
+      ],
+      link: "#",
+    },
   ],
 };
 
@@ -146,10 +172,31 @@ export const experiences = {
   list: [
     {
       image: { img },
+      title: "upReach Associate",
+      info: "upReach | Oct 2021 – Present",
+      details: [
+        "Selected as high potential undergraduate to undertake employability support for underrepresented backgrounds amongst students",
+        "Engaged in insight days, with firms such as Alfa, skills workshops, and networking events, developing commercial awareness",
+        "Advanced CV and application skills through meetings and mock interviews with personal coordinator, setting personal goals",
+      ],
+    },
+    {
+      image: { img },
+      title: "Mentor (Buddy Scheme)",
+      info: "QMUL | Sep 2022 – Jun 2023",
+      details: [
+        "Provided invaluable support and guidance to fellow students, helping them transition into university life",
+        "Organised and facilitated engaging meetups with mentees to foster a friendly networking atmosphere, contributing to their growth",
+      ],
+    },
+    {
+      image: { img },
       title: "Teaching Assistant",
       info: "QMUL | Sep 2022 – Dec 2022",
       details: [
-        "Conducted lab sessions and provided feedback to enhance student understanding of computer science principles.",
+        "Conducted lab sessions and provided feedback to enhance student understanding of computer science principles",
+        "Provided detailed feedback on student work and evaluated presentations to enhance their communication and presentation skills",
+        "Served as a dedicated mentor, contributing to up to 96 students’ academic success and development",
       ],
     },
     {
@@ -157,7 +204,108 @@ export const experiences = {
       title: "Student Consultancy",
       info: "QMUL & IBM | Jun 2022",
       details: [
-        "Led meetings and devised learning journeys for IBM’s internal training programs.",
+        "Led 2 client meetings with IBM to identify their requirements and conducted primary research on sample of 10 users to review current IBM learning journeys, improving client management by navigating different approaches and mitigating risks",
+        "Devised 3 learning journeys using Spoke and created project plan after undertaking training from employees over 8 days",
+        "Delivered 15-minute presentation on solutions found using Mozilla Hub wireframes, receiving excellent feedback",
+      ],
+    },
+    {
+      image: { img },
+      title: "Tech500 Bootcamp",
+      info: "upReach | Jun 2022 – Jul 2022",
+      details: [
+        "Participated in workshops covering project & product management, technical skills (programming, web-dev), and entrepreneurship",
+        "Completed team-building training fostering connections through networking sessions with professionals and upReach associates",
+      ],
+    },
+    {
+      image: { img },
+      title: "Tech500 Hackathon",
+      info: "Samsung & upReach | Mar 2022",
+      details: [
+        "Effectively cooperated with diverse team of 5 students to brainstorm and develop an app monitoring rising energy costs",
+        "Employed a variety of problem solving and technical skills by using HTML and CSS to create prototypes",
+        "Delivered a 7+ minute presentation, putting forward a viable solution to a panel of industry professionals from Samsung",
+      ],
+    },
+    {
+      image: { img },
+      title: "QHack Entrepreneurial Bootcamp",
+      info: "QMUL | Mar 2022",
+      details: [
+        "3-day entrepreneurial skill bootcamp inventing and developing a fitness social media app, pitching to industry professionals",
+        "Formulated and refined a lean canvas by carrying out customer segment research and interviews, developing communication skills",
+      ],
+    },
+    {
+      image: { img },
+      title: "Tata Consultancy Services Bursary Programme",
+      info: "TCS & QMUL | Jan 2022 – May 2022",
+      details: [
+        "Awarded £3000 as a high-achieving student from a low-income background in support of studies",
+        "Participated in workshops and networking events for TCS and QMUL, strengthening commercial awareness and interpersonal skills",
+      ],
+    },
+    {
+      image: { img },
+      title: "Voluntary Tutoring",
+      info: "Team Up | Oct 2021 – Dec 2021",
+      details: [
+        "10-week programme tutoring two KS3 Maths students from disadvantaged backgrounds, improving leadership skills",
+        "Completed weekly reports, self-reflection tasks and module on teacher explanation techniques, improving presentation skills",
+        "Conducted diagnostic tests ante- and post-programme, highlighting a 9% improvement in students’ performance thanks to improved teaching quality – implementing a RAG rating system helped monitor student progress on strengths and weaknesses",
+      ],
+    },
+    {
+      image: { img },
+      title: "QTaster & QMentoring",
+      info: "QMUL | Sep 2021 – Apr 2022",
+      details: [
+        "Gained insights into the tech industry by networking with employers from companies such as Microsoft, ING, and Credit Suisse, gaining commercial awareness",
+        "Paired with alumni working in the tech industry and set monthly goals discussed in periodic meetings",
+      ],
+    },
+    {
+      image: { img },
+      title: "PRP Assignments",
+      techStack: ["Research", "Collaboration", "Presentation", ""],
+      info: "Group Projects | Sep 2021 – Dec 2021",
+      description:
+        "Group projects focused on Ethics, Sustainability, and Problem Definition.",
+      details: [
+        "Delegated tasks to members of the team and assessed their performance, ensuring accuracy and fairness",
+        "Developed excellent time management skills while researching topics in depth under tight deadlines",
+        "Led presentation of the project, achieving 34/35 and refining leadership skills",
+      ],
+      link: "#",
+    },
+    {
+      image: { img },
+      title: "Artist Profile Management",
+      info: "Ediz Tan | Feb 2021 – Jun 2021",
+      details: [
+        "Designed a thematically consistent website to represent personal brand as an artist, developing accuracy and creativity",
+        "Marketed self-produced piano pieces by running Facebook ad campaigns, reaching 4000+ listeners and 140+ link clicks",
+        "Scheduled 10 posts and 14 song releases, improving organisational skills by setting and managing own workload",
+      ],
+    },
+    {
+      image: { img },
+      title: "Accountancy Work Experience",
+      info: "Billur & Co. | Jun 2019 – Jul 2019",
+      details: [
+        "Shadowed accounting team in processing payrolls and tax filings for 100+ client accounts, learning to implement tasks effectively",
+        "Utilised Money Manager to input and monitor client data sourced from income statements and invoices, saving 10+ hours of data entry with accuracy and efficiency, also improving data handling and attention to detail",
+      ],
+    },
+    {
+      image: { img },
+      title: "Food Service Work Experience",
+      info: "The Blue Mermaid | Jul 2017",
+      details: [
+        "Communicated with and tailored services to 150+ customers, learning to respond to customer needs",
+        "Managed commercial transactions worth £1000+, understanding consumer trends in the industry",
+        "Worked in a team of 5 to optimise service delivery within a fast-paced environment, developing the ability to collaborate effectively",
       ],
     },
   ],
