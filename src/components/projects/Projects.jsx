@@ -14,7 +14,6 @@ import "./Projects.css";
 import BoxCard from "../UI/BoxCard";
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import SectionContentCard from "../UI/SectionContentCard";
 import img from "../../assets/images/projects/cats.jpg";
 
 const Projects = () => {
@@ -32,7 +31,12 @@ const Projects = () => {
 
   return (
     <BoxCard id="projects">
-      <SectionContentCard sectionTitle={projects.title} />
+      <Typography
+        variant="h3"
+        sx={{ textAlign: "center", fontWeight: "bold", marginBottom: "40px" }}
+      >
+        {projects.title}
+      </Typography>
 
       <Box
         sx={{
@@ -52,7 +56,6 @@ const Projects = () => {
                 alt={project.title}
                 style={{
                   width: "auto",
-
                   height: "100%",
                   maxHeight: "300px",
                   borderRadius: "8px",
@@ -167,7 +170,6 @@ const Projects = () => {
           </ul>
         </DialogContent>
       </Dialog>
-      <SectionContentCard />
     </BoxCard>
   );
 };

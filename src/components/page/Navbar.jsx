@@ -31,7 +31,7 @@ const Navbar = () => {
           component="div"
           className={styles.logoContainer}
         >
-          <ScrollLink to="landing" smooth={true} duration={300}>
+          <ScrollLink to="landing" smooth={true} duration={500}>
             <img
               src={img}
               alt="Logo"
@@ -73,9 +73,12 @@ const Navbar = () => {
               {sections.map((section) => (
                 <MenuItem
                   key={section}
-                  onClick={handleMenuClose}
-                  component={ScrollLink}
-                  to={`#${section}`}
+                  onClick={() => {
+                    handleMenuClose();
+                    document
+                      .getElementById(section)
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
                   className={styles.menuItem}
                   sx={{
                     fontFamily: "Poppins, sans-serif", // Apply Poppins font to MenuItem
@@ -97,15 +100,14 @@ const Navbar = () => {
                 key={section}
                 sx={{ marginRight: "12px", fontWeight: "600" }}
                 className={styles.link}
+                onClick={() => {
+                  handleMenuClose();
+                  document
+                    .getElementById(section)
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
               >
-                <ScrollLink
-                  to={section}
-                  smooth={true}
-                  duration={300}
-                  className={styles.scrollLink}
-                >
-                  {section.toUpperCase()}
-                </ScrollLink>
+                {section.toUpperCase()}
               </Button>
             ))}
           </Box>

@@ -310,3 +310,8 @@ export const experiences = {
     },
   ],
 };
+
+export const contact = {
+  title: "Contact Me",
+  message: "Feel free to reach out to me.",
+};
