@@ -29,9 +29,8 @@ const Experience = () => {
                 src={img}
                 alt={exp.title}
                 style={{
-                  height: "100%",
-                  maxHeight: "300px",
-                  width: "auto",
+                  width: "100%",
+                  maxWidth: "600px",
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                   marginBottom: "10px",

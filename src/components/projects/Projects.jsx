@@ -55,9 +55,8 @@ const Projects = () => {
                 src={img}
                 alt={project.title}
                 style={{
-                  width: "auto",
-                  height: "100%",
-                  maxHeight: "300px",
+                  width: "100%",
+                  maxWidth: "600px",
                   borderRadius: "8px",
                   boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                   marginBottom: "10px",
