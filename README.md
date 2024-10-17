@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is my personal portfolio website, showcasing my skills, projects, and experience as a final-year Computer Science student. Built with a modern tech stack including HTML, CSS, Material UI, JavaScript, React.js, and emailJS, the website provides an engaging, interactive experience to highlight my journey as a software engineer and tech consultant.
+This is my personal portfolio website (still in the works), showcasing my skills, projects, and experience throughout my journey in education till now as a Computer Science graduate! Built with a modern tech stack including HTML, CSS, Material UI, JavaScript, React.js, and emailJS, the website provides an engaging, interactive experience as opposed to a pdf CV :)
 
 ## 💻 Tech Stack
 
