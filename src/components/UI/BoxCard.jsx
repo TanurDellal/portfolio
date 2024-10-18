@@ -7,7 +7,7 @@ const BoxCard = ({ id, children }) => {
       id={id}
       sx={{
         width: "100%",
-        backgroundColor: "black",
+        backgroundColor: "transparent",
         padding: "60px 20px",
         minHeight: "100vh",
         height: "auto",

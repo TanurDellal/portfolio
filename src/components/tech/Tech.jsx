@@ -2,8 +2,19 @@ import { Typography, Grid2, LinearProgress, Box } from "@mui/material";
 import { tech } from "../..";
 import BoxCard from "../UI/BoxCard";
 import PaperCard from "../UI/PaperCard";
+import { useEffect } from "react";
+import { animate } from "framer-motion";
 
 const SkillBar = ({ skill }) => {
+  // useEffect(() => {
+  //   animate(colour, COLOURS, {
+  //     ease: "easeInOut",
+  //     duration: 10,
+  //     repeat: Infinity,
+  //     repeatType: "mirror",
+  //   });
+  // }, []);
+
   const [proficiencyName, proficiencyValue] = skill.proficiency;
 
   return (

@@ -1,4 +1,5 @@
 import {
+  Background,
   Hero,
   About,
   Education,
@@ -14,10 +15,9 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <div>
-        <Navbar />
-        <Hero />
-      </div>
+      <Background />
+      <Navbar />
+      <Hero />
       <About />
       <Education />
       <Projects />

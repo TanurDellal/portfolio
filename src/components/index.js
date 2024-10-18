@@ -1,3 +1,4 @@
+export { default as Background } from "./page/AuroraBackground";
 export { default as Hero } from "./hero/Hero";
 export { default as About } from "./about/About";
 export { default as Education } from "./education/Education";

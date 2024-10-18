@@ -10,6 +10,8 @@ import { Link as ScrollLink } from "react-scroll";
 import { sections } from "../../index";
 import styles from "./Navbar.module.css";
 import img from "../../assets/images/logo/logo.png";
+import { Canvas } from "@react-three/fiber";
+import { Stars } from "@react-three/drei";
 
 const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 700px)");
@@ -25,6 +27,20 @@ const Navbar = () => {
 
   return (
     <AppBar position="fixed" className={styles.navbar}>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          zIndex: -1,
+        }}
+      >
+        <Canvas>
+          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+        </Canvas>
+      </div>
       <Toolbar className={styles.toolbar}>
         <Typography
           variant="h6"
@@ -58,7 +74,7 @@ const Navbar = () => {
               onClose={handleMenuClose}
               sx={{
                 "& .MuiPaper-root": {
-                  backgroundColor: "rgba(0, 0, 0, 0.6)", // Transparent menu background
+                  backgroundColor: "rgba(2, 6, 23, 0.7)",
                   border: "1px solid rgba(255, 255, 255, 0.3)", // Border for the entire menu
                   backdropFilter: "blur(5px)",
                   color: "white",

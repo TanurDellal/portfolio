@@ -1,30 +1,36 @@
-import { Box, Button, Typography } from "@mui/material";
-import SplineCanvas from "./SplineCanvas";
+import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import styles from "./Hero.module.css";
+import AuroraButton from "../UI/AuroraButton";
 
 const Hero = () => {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+
   return (
     <Box component="section" className={styles.splineContainer} id="landing">
-      <SplineCanvas />
       <Box className={styles.welcomeContainer}>
         <Typography
-          variant="h2"
+          variant={isSmallScreen ? "h2" : "h1"}
           className={styles.welcomeText}
           sx={{ fontWeight: "800", padding: "20px" }}
           gutterBottom
         >
-          Welcome to My Portfolio
+          Welcome!
         </Typography>
-        <Typography variant="h5" color="white" className={styles.welcomeText}>
+        <Typography
+          variant={isSmallScreen ? "h6" : "h5"}
+          color="white"
+          className={styles.welcomeText}
+        >
           I&apos;m Tanur, a First-Class CS Graduate
         </Typography>
-        <Button
+        {/* <Button
           variant="contained"
           className={styles.nextButton}
           sx={{ marginTop: 4 }}
         >
           See My Work
-        </Button>
+        </Button> */}
+        <AuroraButton />
       </Box>
     </Box>
   );
